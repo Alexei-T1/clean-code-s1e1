@@ -11,6 +11,9 @@ input,
 button {
   outline: none;
 }
+.centered {
+  margin: 0 auto;
+}
 
 .main-container {
   background-color: #f8f8f8;
@@ -18,7 +21,6 @@ button {
   font-family: Lato, sans-serif;
 }
 .header {
-  margin: 0 auto;
   width: 500px;
   text-align: right;
   display: block;
@@ -37,10 +39,10 @@ button {
   }
 
 } 
-.centered-main-page-element {
+.main {
   display: block;
   width: 500px;
-  margin: 0 auto 0;
+  /* margin: 0 auto 0; */
 }
 .task {
   width: 56%;
@@ -64,7 +66,7 @@ button {
 }
 /* Heading */
 .title,
-.top-label-for-adding {
+.top-label {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -90,11 +92,11 @@ button {
 }
 
 /* New Task */
-.top-label-for-adding {
+.top-section__label {
   display: block;
   margin: 0 0 20px;
 }
-.top-input-for-adding {
+.top-input {
   width: 318px;
 }
 
@@ -108,11 +110,11 @@ button {
   justify-content: space-between;
   align-items: center;
 }
-.list-tasks-item-content {
+.list-tasks-item-base__content {
   vertical-align: middle;
 }
 
-.task-check {
+.list-tasks-item-base__task-check {
   margin: 0 10px;
 }
 .list-tasks-item-label {
@@ -143,7 +145,6 @@ button {
 .list-tasks-item-input-text {
   display: none;
 }
-
 .edit-mode .list-tasks-item-input-text {
   display: inline-block;
   width: 224px;

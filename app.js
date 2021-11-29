@@ -49,21 +49,21 @@ var createNewTaskElement=function(taskString){
 
     listItem.classList.add('list-tasks-item-base');
 
-    checkBox.classList.add('task-check');
-    checkBox.classList.add('list-tasks-item-content');
+    checkBox.classList.add('list-tasks-item-base__task-check');
+    checkBox.classList.add('list-tasks-item-base__content');
 
     label.classList.add('list-tasks-item-label');
-    label.classList.add('list-tasks-item-content');
+    label.classList.add('list-tasks-item-base__content');
 
     editInput.classList.add('task-text');
-    editInput.classList.add('list-tasks-item-content');
+    editInput.classList.add('list-tasks-item-base__content');
     editInput.classList.add('list-tasks-item-input-text');
 
     editButton.classList.add('button-base');
-    editButton.classList.add('list-tasks-item-content');
+    editButton.classList.add('list-tasks-item-base__content');
 
     deleteButton.classList.add('button-base');
-    deleteButton.classList.add('list-tasks-item-content');
+    deleteButton.classList.add('list-tasks-item-base__content');
     deleteButtonImg.classList.add('list-tasks-item-img');
 
     //and appending.

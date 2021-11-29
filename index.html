@@ -9,41 +9,41 @@
   <title>Todo App</title>
 </head>
 <body class="main-container">
-  <header class="header"><img class="header-img" src="./eisenhower-matrix.jpg" alt="the Eisenhower Matrix for maximum potential"><a class="more-inf"
+  <header class="header centered"><img class="header-img" src="./eisenhower-matrix.jpg" alt="the Eisenhower Matrix for maximum potential"><a class="more-inf"
       href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
   </header>
-  <main class="centered-main-page-element">
-    <section id="top-section-for-adding"><label class="top-label-for-adding" for="new-task">Add Item</label>
+  <main class="main centered">
+    <section class="top-section" id="top-section"><label class="top-label top-section__label" for="new-task">Add Item</label>
       <div class="task-row-wrapper">
-        <input id="new-task" class="task task-text top-input-for-adding" type="text"><button 
+        <input id="new-task" class="task task-text top-input" type="text"><button 
           class="button-base">Add</button>
       </div>
     </section>
-    <section>
+    <section class="todo-section">
       <h3 class="title">Todo</h3>
       <ul class="list-tasks-base list-tasks-incomplete" id="incomplete-tasks">
-        <li class="list-tasks-item-base"><input class="task-check list-tasks-item-content" type="checkbox"><label 
-          class="task list-tasks-item-content list-tasks-item-label">Pay Bills</label><input type="text" 
+        <li class="list-tasks-item-base"><input class="list-tasks-item-base__task-check list-tasks-item-base__content" type="checkbox"><label 
+          class="task list-tasks-item-base__content list-tasks-item-label">Pay Bills</label><input type="text" 
             class="task task-text list-tasks-item-input-text"><button
-              class="button-base edit list-tasks-item-content">Edit</button><button 
-                class="button-base delete list-tasks-item-content"><img class="list-tasks-item-img" src="./remove.svg" alt=""></button>
+              class="button-base edit list-tasks-item-base__content">Edit</button><button 
+                class="button-base delete list-tasks-item-base__content"><img class="list-tasks-item-img" src="./remove.svg" alt=""></button>
         </li>
-        <li class="list-tasks-item-base edit-mode"><input class="task-check list-tasks-item-content" type="checkbox"><label 
-          class="task list-tasks-item-content list-tasks-item-label">Go Shopping</label><input type="text"
-            value="Go Shopping" class="task task-text list-tasks-item-content list-tasks-item-input-text"><button 
-              class="button-base edit list-tasks-item-content">Save</button><button 
-                class="button-base delete list-tasks-item-content"><img class="list-tasks-item-img" src="./remove.svg" alt=""></button>
+        <li class="list-tasks-item-base edit-mode"><input class="list-tasks-item-base__task-check list-tasks-item-base__content" type="checkbox"><label 
+          class="task list-tasks-item-base__content list-tasks-item-label">Go Shopping</label><input type="text"
+            value="Go Shopping" class="task task-text list-tasks-item-base__content list-tasks-item-input-text"><button 
+              class="button-base edit list-tasks-item-base__content">Save</button><button 
+                class="button-base delete list-tasks-item-base__content"><img class="list-tasks-item-img" src="./remove.svg" alt=""></button>
         </li>
       </ul>
     </section>
-    <section>
+    <section class="completed-section">
       <h3 class="title">Completed</h3>
       <ul class="list-tasks-base list-tasks-completed" id="completed-tasks">
-        <li class="list-tasks-item-base"><input class="task-check list-tasks-item-content" type="checkbox" checked><label 
-          class="task list-tasks-item-content list-tasks-item-label list-tasks-completed-label">See the Doctor</label><input type="text"
-            class="task task-text list-tasks-item-content list-tasks-item-input-text"><button 
-              class="button-base edit list-tasks-item-content">Edit</button><button 
-                class="button-base delete list-tasks-item-content"><img class="list-tasks-item-img" src="./remove.svg" alt=""></button>
+        <li class="list-tasks-item-base"><input class="list-tasks-item-base__task-check list-tasks-item-base__content" type="checkbox" checked><label 
+          class="task list-tasks-item-base__content list-tasks-item-label list-tasks-completed-label">See the Doctor</label><input type="text"
+            class="task task-text list-tasks-item-base__content list-tasks-item-input-text"><button 
+              class="button-base edit list-tasks-item-base__content">Edit</button><button 
+                class="button-base delete list-tasks-item-base__content"><img class="list-tasks-item-img" src="./remove.svg" alt=""></button>
         </li>
     </ul>
     </section>
